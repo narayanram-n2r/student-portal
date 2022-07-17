@@ -1,0 +1,28 @@
+<div>
+    <br>
+    <h1 style="color: purple; text-align: center; font-family:'Times New Roman', Times, serif; font-size: xxx-large;">
+        Report
+    </h1>
+
+    <div>
+        <cdk-virtual-scroll-viewport itemSize="20" class="example-viewport">
+            <table class="center table table-striped" style="font-family: 'Times New Roman', Times, serif; color: olive; font-size: x-large;">
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile Number</th>
+                <th>Test</th>
+                <th>Score</th>
+
+                <tr *cdkVirtualFor="let item of studreport">
+                    <td>Hai</td>
+                    <td class="example-item">{{item.student_name}}</td>
+                    <td class="example-item">{{item.student_email}}</td>
+                    <td class="example-item">{{item.student_mobno}}</td>
+                    <td class="example-item">{{item.student_test}}</td>
+                    <td class="example-item">{{item.student_result}}</td>
+                </tr>
+
+            </table>
+        </cdk-virtual-scroll-viewport>
+    </div>
+</div> 

@@ -1,0 +1,38 @@
+/* body,
+html {
+    height: 100%;
+    margin: 0;
+} */
+
+.bg {
+    /* The image used */
+    background-image: url("../../assets/pic2.jpg");
+    /* Full height */
+    /* Center and scale the image nicely */
+    height: 630px;
+    
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: grey;
+    background-size: cover; 
+}
+
+#bt {
+    margin-top: 10%;
+    margin-right: 60%;
+    background-color: rgb(23, 180, 70);
+    padding: 10px 55px 20px 75px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+#bt1 {
+    margin-top: 1%;
+    margin-right: 60%;
+    background-color: rgb(23, 180, 70);
+    padding: 10px 55px 20px 75px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
