@@ -1,0 +1,38 @@
+<div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+        <div class="card p-2 border-0" *ngFor="let item of selectedQuiz" style="background-color:whitesmoke; font-family: 'Times New Roman', Times, serif;">
+            <ul>
+                <li>
+                    <label style="font-size: x-large;" for="a" id="a_text">{{item.n}}.&nbsp;&nbsp;{{item.question}}</label>
+                </li>
+
+                <li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input (click)="scoregrn($event)" type="radio" name={{item.n}} id="a" class="answer">
+                    <label for="a" id="a_text">&nbsp;&nbsp;{{item.a}}</label>
+                </li>
+
+                <li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input (click)="scoregrn($event)" type="radio" name={{item.n}} id="b" class="answer">
+                    <label for="b" id="b_text">&nbsp;&nbsp;{{item.b}}</label>
+                </li>
+
+                <li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input (click)="scoregrn($event)" type="radio" name={{item.n}} id="c" class="answer">
+                    <label for="c" id="c_text">&nbsp;&nbsp;{{item.c}}</label>
+                </li>
+
+                <li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input (click)="scoregrn($event)" type="radio" name={{item.n}} id="d" class="answer">
+                    <label for="d" id="d_text">&nbsp;&nbsp;{{item.d}}</label>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <div style="padding-left: 80%">
+        <a routerLink={{Fin}} (click)="send()" class="nav-link" class="btn-lg btn-success active" role="button">&nbsp;&nbsp;Finish&nbsp;&nbsp;</a>
+        <br>
+        <br>
+    </div>
+</div>
